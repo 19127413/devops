@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t 19127413/docker:latest .'
+				sh 'docker build -t 19127413/docker:test .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push 19127413/docker:latest'
+				sh 'docker push 19127413/docker:test'
 			}
 		}
 	}
